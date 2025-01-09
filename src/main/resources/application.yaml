@@ -22,3 +22,6 @@ server:
   netty:
     connection-timeout: 2s              # How long to wait for a TCP connection to be established with the server
     idle-timeout: 15s                   # How long to wait before closing a TCP connection if no data is transferred
+
+polar:
+  catalog-service-uri: "http://localhost:9001"

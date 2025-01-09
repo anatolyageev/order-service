@@ -28,6 +28,10 @@ dependencies {
 
     runtimeOnly 'org.springframework:spring-jdbc'
     runtimeOnly 'org.postgresql:r2dbc-postgresql'
+
+//    annotationProcessor 'org.springframework.boot:spring-boot-configurationprocessor'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor:3.4.0' // Match your Spring Boot version
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.boot:spring-boot-testcontainers'
     testImplementation 'io.projectreactor:reactor-test'
@@ -35,6 +39,7 @@ dependencies {
     testImplementation 'org.testcontainers:postgresql'
     testImplementation 'org.testcontainers:r2dbc'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
 }
 
 tasks.named('test') {
